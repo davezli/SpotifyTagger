@@ -1,0 +1,131 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+.dropdown {
+    padding: 3px;
+    font-size: large;
+    border: 1px gray solid;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.imagelabel {
+    vertical-align: middle;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+.badge {
+    border-radius: 5px;
+    background: #4CAF50;
+    padding: 3px 12px;
+    margin: 5px;
+    color: white;
+    font-size: small;
+}
+
+.green {
+    color: #4CAF50
+}
+
+.hidden {
+    display: none;
+}
+
+.headerTable {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: black 3px solid;
+}
+
+.widthHack {
+    width: 100%;
+}
+
+.list-group {
+    padding-left: 0px;
+}
+
+.list-group-item {
+    display: block;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.list-group-item:hover {
+    display: block;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: gray;
+}
+
+.list-group-item.selected {
+    display: block;
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: gray;
+}
+
+.inlineflex {
+    display: inline-flex;
+}
+
+.center {
+    display: block !important;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 25px;
+}
+
+#login {
+    display: none;
+}
+
+#loggedin {
+    display: none;
+}
+
+#mainView {
+    display: none;
+}
+
+#playlistView {
+    display: none;
+}
+
+#songsView {
+    display: none;
+}
+
+#searchView {
+    display: none;
+}
+
+#searchResultView {
+    display: none;
+}
+
+#loadingScreen {
+    display: none;
+}

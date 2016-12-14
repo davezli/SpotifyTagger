@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta content="initial-scale=1.0" name="viewport">
+    <script src=
+                    "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+            type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/lodash/4.17.1/lodash.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Spotify Tagger</title>
+</head>
+<body onload="startApp()">
+<div id="login">
+    <p>
+    <table class="headerTable">
+        <tr>
+            <th class="title green">Spotify Tagger</th>
+        </tr>
+    </table>
+    <button id="start" class="btn center">Log in</button>
+    </p>
+</div><!-- "Page" to show when logged in -->
+<div id="loggedin">
+    <table class="headerTable">
+        <tr>
+            <th><i id="backbtn" class="fa fa-chevron-left pull-left fa-fw fa-2x green"></i></th>
+            <th id="title" class="title green">Spotify Tagger</th>
+            <th><i id="searchbtn" class="fa fa-search pull-right fa-fw fa-2x green"></i></th>
+        </tr>
+    </table>
+
+    <div id="mainView">
+        <ul id="playlists" class="list-group"></ul>
+    </div>
+
+    <div id="playlistView">
+        <ul id="songs" class="list-group"></ul>
+    </div>
+
+    <div id="songsView">
+
+        <h3>Tags:</h3>
+        <ul id="tags" class="list-group"></ul>
+
+        <h3>Rating:</h3>
+        <select class="dropdown" id="ratingSelector">
+            <option value="blank">Select A Rating</option>
+            <option value="1">1 - ★</option>
+            <option value="2">2 - ★★</option>
+            <option value="3">3 - ★★★</option>
+            <option value="4">4 - ★★★★</option>
+            <option value="5">5 - ★★★★★</option>
+        </select>
+
+        <button id="saveTrack" class="btn center">Save</button>
+    </div>
+
+
+    <div id="searchView">
+
+        <h3>Tags:</h3>
+        Include
+        <input type="radio" class="inlineflex" name="tagchoice" value="all" checked="checked"> All</input>
+        <input type="radio" class="inlineflex" name="tagchoice" value="some"> Some</input>
+
+        <ul id="searchTags" class="list-group"></ul>
+
+        <h3>Rating:</h3>
+        Greater than or equal to
+        <select class="dropdown" id="searchRatingSelector">
+            <option value="blank">Select A Rating</option>
+            <option value="1">1 - ★</option>
+            <option value="2">2 - ★★</option>
+            <option value="3">3 - ★★★</option>
+            <option value="4">4 - ★★★★</option>
+            <option value="5">5 - ★★★★★</option>
+        </select>
+
+        <button id="search" class="btn center">Search</button>
+    </div>
+
+    <div id="searchResultView">
+        <ul id="results" class="list-group"></ul>
+        <button id="createplaylist" class="btn center">Create Playlist From Results</button>
+
+    </div>
+
+    <div id="loadingScreen" class="hidden">
+        <i class="fa fa-refresh fa-spin fa-5x fa-fw center"></i>
+    </div>
+
+</div>
+</body>
+
+<template id="list_item">
+    <div class="key_val_row">
+        <div class="name"></div>
+    </div>
+</template>
+</html>
